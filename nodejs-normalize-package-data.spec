@@ -1,18 +1,18 @@
 %define		pkg	normalize-package-data
 Summary:	Normalizes data that can be found in package.json files
 Name:		nodejs-%{pkg}
-Version:	0.2.13
+Version:	0.3.0
 Release:	1
 License:	MIT
 Group:		Development/Libraries
 Source0:	http://registry.npmjs.org/%{pkg}/-/%{pkg}-%{version}.tgz
-# Source0-md5:	f7eb4961487a0b65e412107837467cb2
+# Source0-md5:	7c28e38546770618a4f39a12e51f5f30
 URL:		https://github.com/meryn/normalize-package-data
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
 Requires:	nodejs-github-url-from-git = 1.1.1
-Requires:	nodejs-github-url-from-username-repo < 1.0.0
-Requires:	nodejs-github-url-from-username-repo >= 0.1.0
+Requires:	nodejs-github-url-from-username-repo < 1
+Requires:	nodejs-github-url-from-username-repo >= 0.2.0
 Requires:	nodejs-semver < 3
 Requires:	nodejs-semver >= 2
 BuildArch:	noarch
